@@ -40,7 +40,7 @@ contract ImmunityPassportContract is ChainlinkClient, Ownable {
    * @dev This function ignores the stored Oracle contract address and
    * will instead send the request to the address specified
    * @param _oracle The Oracle contract address to send the request to
-   * @param _immunityPassportId The bytes32 JobID to be executed
+   * @param _immunityPassportId The bytes32 _immunityPassportId to be executed
    * @param _url The URL to fetch data from
    * @param _path The dot-delimited path to parse of the response
    * @param _times The number to multiply the result by
@@ -48,7 +48,7 @@ contract ImmunityPassportContract is ChainlinkClient, Ownable {
   function createRequestTo(
     address _oracle,
     bytes32 _immunityPassportId,
-    uint256 _payment,
+    uint256 _immunityReward,
     string memory _url,
     string memory _path,
     int256 _times
@@ -61,7 +61,7 @@ contract ImmunityPassportContract is ChainlinkClient, Ownable {
     req.add("url", _url);
     req.add("path", _path);
     req.addInt("times", _times);
-    requestId = sendChainlinkRequestTo(_oracle, req, _payment);
+    requestId = sendChainlinkRequestTo(_oracle, req, _immunityReward);
   }
 
   /**
@@ -89,20 +89,20 @@ contract ImmunityPassportContract is ChainlinkClient, Ownable {
   /**
    * @notice Call this method if no response is received within 5 minutes
    * @param _requestId The ID that was generated for the request to cancel
-   * @param _payment The payment specified for the request to cancel
+   * @param _immunityReward The ImmuntiyReward specified for the request to cancel
    * @param _callbackFunctionId The bytes4 callback function ID specified for
    * the request to cancel
    * @param _expiration The expiration generated for the request to cancel
    */
   function cancelRequest(
     bytes32 _requestId,
-    uint256 _payment,
+    uint256 _immunityReward,
     bytes4 _callbackFunctionId,
     uint256 _expiration
   )
     public
     onlyOwner
   {
-    cancelChainlinkRequest(_requestId, _payment, _callbackFunctionId, _expiration);
+    cancelChainlinkRequest(_requestId, _immunityReward, _callbackFunctionId, _expiration);
   }
 }

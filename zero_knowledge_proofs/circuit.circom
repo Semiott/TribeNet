@@ -1,9 +1,10 @@
-template Multiplier() {
-    signal private input a;
-    signal private input b;
-    signal output c;
+template ImmunityMultiplier() {
+    signal private input ImmunitySource1;
+    signal private input ImmunitySource2;
+    signal private input ImmunitySource3;
+    signal output ProofOfImmunity;
 
-    c <== a*b;
+    ProofOfImmunity <== ImmunitySource1*ImmunitySource2*ImmunitySource3;
 }
 
-component main = Multiplier();
+component main = ImmunityMultiplier();

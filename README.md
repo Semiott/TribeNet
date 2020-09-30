@@ -26,7 +26,7 @@
 ## Workflow
 - Immunity Passport Data Collection from Chainlink Oracle Contracts through integration with the data feeds.
 - Immunity Proof Construction in a Privacy Preserving Methods using ZKP based from Oracle Data Contracts
-- Immunity Proofs and Oracle Data to generate ERC-20 Tokens and DAO for the Immunity Passport Governance
+- Immunity Proofs & Oracle Data based ERC-20 Tribe Tokens and DAO for the Immunity Passport Governance
 - Immunity Tokens Governed by Decentralised Autonomous Organisations (DAO) built using Chainlink VRF
 - Immunity Proof and Oracle Indexed DAO is Governed through the the proof of authority consensus
 - Immunity Token Distribution through the proof of stake consensus to securely stake rewards and benefits

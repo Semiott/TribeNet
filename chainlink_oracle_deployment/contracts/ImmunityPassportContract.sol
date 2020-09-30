@@ -40,14 +40,14 @@ contract ImmunityPassportContract is ChainlinkClient, Ownable {
    * @dev This function ignores the stored Oracle contract address and
    * will instead send the request to the address specified
    * @param _oracle The Oracle contract address to send the request to
-   * @param _jobId The bytes32 JobID to be executed
+   * @param _immunityPassportId The bytes32 JobID to be executed
    * @param _url The URL to fetch data from
    * @param _path The dot-delimited path to parse of the response
    * @param _times The number to multiply the result by
    */
   function createRequestTo(
     address _oracle,
-    bytes32 _jobId,
+    bytes32 _immunityPassportId,
     uint256 _payment,
     string memory _url,
     string memory _path,
@@ -57,7 +57,7 @@ contract ImmunityPassportContract is ChainlinkClient, Ownable {
     onlyOwner
     returns (bytes32 requestId)
   {
-    Chainlink.Request memory req = buildChainlinkRequest(_jobId, address(this), this.fulfill.selector);
+    Chainlink.Request memory req = buildChainlinkRequest(_immunityPassportId, address(this), this.fulfill.selector);
     req.add("url", _url);
     req.add("path", _path);
     req.addInt("times", _times);

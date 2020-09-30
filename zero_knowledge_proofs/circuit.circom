@@ -1,4 +1,3 @@
-cat <<EOT > circuit.circom
 template Multiplier(n) {
     signal private input a;
     signal private input b;
@@ -15,4 +14,3 @@ template Multiplier(n) {
 }
 
 component main = Multiplier(1000);
-EOT

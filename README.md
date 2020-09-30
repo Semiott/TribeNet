@@ -12,3 +12,4 @@
 - Privacy Preserving Immunity Passport through Zero Knowledge 
 - Scalable Immunity Data Acquisition through Chainlink Oracle
 - Empathy Centric End User Engagement through Experience Design
+- Integration with Blockchain Powered Blood Bank Platform 

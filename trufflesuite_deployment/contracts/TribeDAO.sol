@@ -112,7 +112,7 @@ contract TribeDAO {
         Campaign storage c,
         TribeNetwork storage TribeNode
     ) checkFollowPhase(c.bnum, c.commitDeadline)
-        blankAddress(FractalNode.caddr) internal returns (bool) {
+        blankAddress(TribeNode.caddr) internal returns (bool) {
         c.bountypot += msg.value;
         c.TribeGroups[msg.sender] = TribeNetwork(msg.sender, msg.value);
         emit LogFollow(_campaignID, msg.sender, msg.value);

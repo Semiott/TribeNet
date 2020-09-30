@@ -1,3 +1,4 @@
+cat <<EOT > circuit.circom
 template ImmunityMultiplier() {
     signal private input ImmunitySource1;
     signal private input ImmunitySource2;
@@ -8,3 +9,4 @@ template ImmunityMultiplier() {
 }
 
 component main = ImmunityMultiplier();
+EOT

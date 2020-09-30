@@ -1,16 +1,16 @@
-template Multiplier(n) {
-    signal private input a;
-    signal private input b;
-    signal output c;
+template ImmunityMultiplier(ImmunityFactor) {
+    signal private input ImmunityType;
+    signal private input ImmunitySource;
+    signal output ImmunityIndex;
 
-    signal int[n];
+    signal int[ImmunityFactor];
 
-    int[0] <== a*a + b;
-    for (var i=1; i<n; i++) {
-    int[i] <== int[i-1]*int[i-1] + b;
+    int[0] <== ImmunityType*ImmunityType + ImmunitySource;
+    for (var i=1; i<ImmunityFactor; i++) {
+    int[i] <== int[i-1]*int[i-1] + ImmunitySource;
     }
 
-    c <== int[n-1];
+    ImmunityIndex <== int[ImmunityFactor-1];
 }
 
-component main = Multiplier(1000);
+component main = ImmunityMultiplier(1000);

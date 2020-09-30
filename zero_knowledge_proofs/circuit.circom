@@ -1,12 +1,18 @@
 cat <<EOT > circuit.circom
-template ImmunityMultiplier() {
-    signal private input ImmunitySource1;
-    signal private input ImmunitySource2;
-    signal private input ImmunitySource3;
-    signal output ProofOfImmunity;
+template Multiplier(n) {
+    signal private input a;
+    signal private input b;
+    signal output c;
 
-    ProofOfImmunity <== ImmunitySource1*ImmunitySource2*ImmunitySource3;
+    signal int[n];
+
+    int[0] <== a*a + b;
+    for (var i=1; i<n; i++) {
+    int[i] <== int[i-1]*int[i-1] + b;
+    }
+
+    c <== int[n-1];
 }
 
-component main = ImmunityMultiplier();
+component main = Multiplier(1000);
 EOT

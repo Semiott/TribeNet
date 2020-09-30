@@ -12,6 +12,13 @@ module.exports = {
       port: 7545,
       network_id: '*',
     },
+    matic: {
+      provider: () => new HDWalletProvider(mnemonic, `https://rpc-mumbai.matic.today`),
+      network_id: 80001,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
     live: {
       provider: () => {
         return new HDWalletProvider(process.env.MNEMONIC, process.env.RPC_URL)

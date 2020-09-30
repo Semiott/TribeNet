@@ -35,3 +35,5 @@
 - Chainlink Integration with Trufflesuite : https://blog.chain.link/how-to-use-chainlink-with-truffle-2/
 - Circom Circuit Generation for zk-SNARKS : https://github.com/iden3/circom
 - Circom Integration with SnarkJS : https://github.com/iden3/snarkjs
+- Chainlink VRF ConsumerBase : https://docs.chain.link/docs/chainlink-vrf-api-reference
+- RANDAO model for Tokenomics : https://github.com/randao/randao

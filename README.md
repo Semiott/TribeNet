@@ -23,6 +23,13 @@
 - Immunity Passport Registration through Proof of Authority Consensus
 - Immunity Passport Token Sharing through Proof of Stake Consensus
 
+## Workflow
+- Immunity Passport Data Collection from Chainlink Oracle Contracts that integrates Blockchain to the Big Data in the Physical World
+- Immunity Proof Construction in a Privacy Preserving Manner using Zero Knowledge Proofs based on the Data Collected by Immunity Oracles
+- Immunity Proofs and Immunity Oracle Data is used to generate an ERC-20 Token and a Dynamic DAO for the Immunity Passport Governance
+- Decentralised Autonomous Organisation is Governed through the Immunity Proof and Oracles by applying the proof of authority consensus
+- Token Distribution through the proof of stake consensus for the token holders to securely stake immuniity passport rewards and benefits
+
 ## Integrations
 - Chainlink Integration with Trufflesuite : https://blog.chain.link/how-to-use-chainlink-with-truffle-2/
 - Circom Circuit Generation for zk-SNARKS : https://github.com/iden3/circom

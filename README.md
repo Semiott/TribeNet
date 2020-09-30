@@ -7,3 +7,8 @@
   2. Gokul Alex
   3. Karishma Pradeep 
   4. Nandana Ambili
+
+## Features
+- Privacy Preserving Immunity Passport through Zero Knowledge 
+- Scalable Immunity Data Acquisition through Chainlink Oracle
+- Empathy Centric End User Engagement through Experience Design

@@ -17,7 +17,7 @@
 - Chainlink Oracles for the Immunity Data Collection
 - Immunity Proof Construction through Iden3 Circom Compilers
 - Immunity Proof Verification through Iden3 SnarkJS Library
-_ Immunity Proof Smart Contracts through zk-SNARK Smart Contracts
+- Immunity Proof Smart Contracts through zk-SNARK Smart Contracts
 - Immunity Decentralised Autonomous Organisation as a RANDAO
 - Immunity Passport Proof Indexing through Chainlink VRF
 - Immunity Passport Registration through Proof of Authority Consensus

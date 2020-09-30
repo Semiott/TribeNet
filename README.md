@@ -12,7 +12,16 @@
 - Privacy Preserving Immunity Passport through Zero Knowledge 
 - Scalable Immunity Data Acquisition through Chainlink Oracle
 - Empathy Centric End User Engagement through Experience Design
-- Integration with Blockchain Powered Blood Bank Platform 
+- ERC-20 Tokens for the Immunity Passport Tokenisation
+- Chainlink Verifiable Random Functions for the Immunity Indexing
+- Chainlink Oracles for the Immunity Data Collection
+- Immunity Proof Construction through Iden3 Circom Compilers
+- Immunity Proof Verification through Iden3 SnarkJS Library
+_ Immunity Proof Smart Contracts through zk-SNARK Smart Contracts
+- Immunity Decentralised Autonomous Organisation as a RANDAO
+- Immunity Passport Proof Indexing through Chainlink VRF
+- Immunity Passport Registration through Proof of Authority Consensus
+- Immunity Passport Token Sharing through Proof of Stake Consensus
 
 ## Integrations
 - Chainlink Integration with Trufflesuite : https://blog.chain.link/how-to-use-chainlink-with-truffle-2/

@@ -98,7 +98,7 @@ contract TribeDAO {
     function follow(uint256 _campaignID)
         external payable returns (bool) {
         Campaign storage c = campaigns[_campaignID];
-        TribeNetwork storage TussleNode = c.TussleGroups[msg.sender];
+        TribeNetwork storage TribeNode = c.TribeGroups[msg.sender];
         return followCampaign(_campaignID, c, TribeNode);
     }
 
@@ -110,7 +110,7 @@ contract TribeDAO {
     function followCampaign(
         uint256 _campaignID,
         Campaign storage c,
-        TussleNetwork storage FractalNode
+        TribeNetwork storage TribeNode
     ) checkFollowPhase(c.bnum, c.commitDeadline)
         blankAddress(FractalNode.caddr) internal returns (bool) {
         c.bountypot += msg.value;
@@ -208,9 +208,9 @@ contract TribeDAO {
         if (c.revealsNum == c.commitNum ) {
             c.settled = true;
             bytes32 randomNumber;
-            uint256 TussleSeed = uint256(block.number);
+            uint256 TribeSeed = uint256(block.number);
             TribeIndexin tIndex = TribeRandom(TribeIndexContractAddress);
-            randomNumber = tRandom.getRandomNumber(TribeSeed);
+            randomNumber = tIndex.getRandomNumber(TribeSeed);
             return c.random + uint256(randomNumber);
         }
     }
@@ -288,7 +288,7 @@ contract TribeDAO {
         internal
         bountyPhase(c.bnum)
         campaignFailed(c.commitNum, c.revealsNum)
-        beConsumer(c.TussleGroups[msg.sender].caddr) {
+        beConsumer(c.TribeGroups[msg.sender].caddr) {
         uint256 bountypot = c.TribeGroups[msg.sender].bountypot;
         c.TribeGroups[msg.sender].bountypot = 0;
         msg.sender.transfer(bountypot);

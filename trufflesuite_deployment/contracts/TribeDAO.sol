@@ -209,7 +209,7 @@ contract TribeDAO {
             c.settled = true;
             bytes32 randomNumber;
             uint256 TribeSeed = uint256(block.number);
-            TribeIndexin tIndex = TribeRandom(TribeIndexContractAddress);
+            TribeIndexing tIndex = TribeRandom(TribeIndexContractAddress);
             randomNumber = tIndex.getRandomNumber(TribeSeed);
             return c.random + uint256(randomNumber);
         }

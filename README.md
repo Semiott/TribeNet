@@ -1,12 +1,7 @@
-# TribeNet Immunity Passport Platform
+# TribeNet Post Pandemic Identity Platform
 - Construction of Proofs of Immunity for the Post Pandemic Tribes through trustworthy, transparent identity
-- Project Link : https://platform-hackathon.maxonrow.com/#/projects/5f57e1ea30c062001bf399fd
-- Must read document : https://github.com/maxonrow/maxathon
-- Team member: 
-  1. Dhanendra Singh 
-  2. Gokul Alex
-  3. Karishma Pradeep 
-  4. Nandana Ambili
+- Creates a fairness focused fabric for immunty passports powered by computational integrity systems
+- Creation of incentives and rewards for the formation of immutiy focused communities
 
 ## Features
 - Privacy Preserving Immunity Passport through Zero Knowledge 
@@ -32,8 +27,15 @@
 - Immunity Token Distribution through the proof of stake consensus to securely stake rewards and benefits
 
 ## Integrations
-- Chainlink Integration with Trufflesuite : https://blog.chain.link/how-to-use-chainlink-with-truffle-2/
-- Circom Circuit Generation for zk-SNARKS : https://github.com/iden3/circom
-- Circom Integration with SnarkJS : https://github.com/iden3/snarkjs
-- Chainlink VRF ConsumerBase : https://docs.chain.link/docs/chainlink-vrf-api-reference
-- RANDAO model for Tokenomics : https://github.com/randao/randao
+- Chainlink Integration with Trufflesuite >> https://blog.chain.link/how-to-use-chainlink-with-truffle-2/
+- Circom Circuit Generation for zk-SNARKS >> https://github.com/iden3/circom
+- Circom Integration with SNARKjs >> https://github.com/iden3/snarkjs
+- Chainlink VRF ConsumerBase >> https://docs.chain.link/docs/chainlink-vrf-api-reference
+- RANDAO model for Tokenomics >> https://github.com/randao/randao
+
+## References 
+- Wikipedia on Immunity Passport >> https://en.wikipedia.org/wiki/Immunity_passport
+- WHO on Immunity Passport >> https://www.who.int/news-room/commentaries/detail/immunity-passports-in-the-context-of-covid-19
+- BBC on Immunity Passport >> http://www.bbc.com/travel/story/20200831-coronavirus-will-you-need-an-immunity-passport-to-travel
+- Nature on Immunity Passport >> https://www.nature.com/articles/d41586-020-01451-0
+
